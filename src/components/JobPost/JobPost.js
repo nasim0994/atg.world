@@ -27,10 +27,16 @@ const JobPost = () => {
           <div className="d-flex justify-content-between align-items-center mt-4">
             <div className="user d-flex justify-content-between align-items-center gap-2">
               <img src={user2} alt="" />
-              <h5 className="fw-semibold">Joseph Gray</h5>
+              <div>
+                <h5 className="fw-semibold m-0">Joseph Gray</h5>
+                <p className="m-0 fs-6 d-flex d-lg-none gap-2 align-items-center">
+                  <AiOutlineEye />
+                  1.4k views
+                </p>
+              </div>
             </div>
             <div className="d-flex justify-content-between align-items-center gap-5">
-              <p className="m-0 fs-6 d-flex gap-2 align-items-center">
+              <p className="m-0 fs-6 d-none d-lg-flex gap-2 align-items-center">
                 <AiOutlineEye />
                 1.4k views
               </p>

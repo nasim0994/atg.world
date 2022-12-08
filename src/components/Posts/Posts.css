@@ -18,3 +18,9 @@
   border: none;
   font-size: 15px;
 }
+
+@media only screen and (max-width: 992px) {
+  .posts-container {
+    width: 100%;
+  }
+}

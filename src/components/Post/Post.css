@@ -28,3 +28,9 @@
   font-size: 12px;
   color: #5c5c5c;
 }
+
+@media only screen and (max-width: 992px) {
+  .post {
+    width: 100%;
+  }
+}

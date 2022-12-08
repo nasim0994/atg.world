@@ -14,7 +14,18 @@
 
 .banner-content {
   position: absolute;
-  bottom: 100px;
+  bottom: 10%;
   left: 20%;
   color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+  .banner-container {
+    height: 250px;
+  }
+  .banner-content {
+    bottom: 10%;
+    left: 10%;
+    color: #fff;
+  }
 }

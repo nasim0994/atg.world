@@ -6,12 +6,12 @@ import signupBanner from "../../Images/signup.png";
 const SignupForm = ({ handelChangeForm }) => {
   return (
     <div class="modal-body px-4 pb-5">
-      <div className="d-flex gap-4">
-        <div className="w-50">
+      <div className="row">
+        <div className="col-12 col-lg-6 ">
           <h3>Create Account</h3>
           <form>
             <div className="input-group">
-              <div className="d-flex">
+              <div className="d-flex w-100">
                 <input type="text" className="w-50" placeholder="First Name" />
                 <input type="text" className="w-50" placeholder="Last Name" />
               </div>
@@ -38,13 +38,18 @@ const SignupForm = ({ handelChangeForm }) => {
               />
             </div>
 
-            <div>
-              <button
-                type="submit"
-                className="w-100 mt-3 btn btn-primary rounded-5"
-              >
-                Create Account
-              </button>
+            <div className="row">
+              <div className="col-6 col-lg-12">
+                <button
+                  type="submit"
+                  className="w-100 mt-3 btn btn-primary rounded-5"
+                >
+                  Create Account
+                </button>
+              </div>
+              <div className="d-lg-none text-decoration-underline col-6 col-lg-12 d-flex align-items-center justify-content-end">
+                or, Sign In
+              </div>
             </div>
           </form>
 
@@ -58,8 +63,15 @@ const SignupForm = ({ handelChangeForm }) => {
               Sign up with Google
             </button>
           </div>
+
+          <div className="d-lg-none text-center mt-4">
+            <small style={{ fontSize: "16px" }}>
+              By signing up, you agree to our Terms & conditions, Privacy policy
+            </small>
+          </div>
         </div>
-        <div className="w-50 signup">
+
+        <div className="d-none d-lg-block signup col-12 col-lg-6">
           <p className="text-end">
             Already have an account?{" "}
             <button
@@ -69,7 +81,7 @@ const SignupForm = ({ handelChangeForm }) => {
               Sign In
             </button>
           </p>
-          <div className="mb-4 ">
+          <div className="mb-4">
             <img src={signupBanner} alt="" className="signup-banner" />
           </div>
 

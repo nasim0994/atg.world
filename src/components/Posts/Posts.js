@@ -14,8 +14,9 @@ import group3 from "../../Images/g-2.png";
 const Posts = () => {
   return (
     <div className="posts-container">
-      <div className="post-category w-100 d-flex justify-content-between">
-        <div className="">
+      <div className="d-lg:none"></div>
+      <div className="d-none d-lg-flex post-category w-100 justify-content-between">
+        <div>
           <ul className="d-flex gap-4 list-unstyled">
             <li className="active">All Posts(32)</li>
             <li>Article</li>
@@ -35,7 +36,7 @@ const Posts = () => {
         </div>
       </div>
 
-      <div className="d-flex w-100 gap-5 mt-4">
+      <div className="d-lg-flex gap-5 mt-4">
         <div>
           <Post />
           {/* Since the 3 posts are the same, only the category name is different and the data will come from the database, so I did not design it separately  */}
@@ -45,7 +46,7 @@ const Posts = () => {
           <JobPost />
         </div>
 
-        <div className="right-side">
+        <div className="right-side d-none d-lg-block">
           <div className="d-flex justify-content-between w-100 border-bottom">
             <p className="d-flex gap-2 align-items-center">
               <MdOutlineLocationOn className="fs-5" />

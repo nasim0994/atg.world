@@ -11,10 +11,10 @@ const Header = () => {
     <nav class="navbar bg-white navbar-expand-lg">
       <div class="container">
         <div className="w-100 d-flex justify-content-between">
-          <Link to="/">
+          <Link to="/" className="d-none d-lg-block">
             <img src={logo} alt="" />
           </Link>
-          <div className="search position-relative">
+          <div className="search position-relative d-none d-lg-block">
             <IoMdSearch className="search-icon" />
             <input
               type="text"

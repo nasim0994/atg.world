@@ -6,8 +6,8 @@ import signupBanner from "../../Images/signup.png";
 const Login = ({ handelChangeForm }) => {
   return (
     <div class="modal-body px-4 pb-5">
-      <div className="d-flex gap-4">
-        <div className="w-50">
+      <div className="row">
+        <div className="col-12 col-lg-6">
           <h3>Sign In</h3>
           <form>
             <div className="input-group">
@@ -27,13 +27,18 @@ const Login = ({ handelChangeForm }) => {
               />
             </div>
 
-            <div>
-              <button
-                type="submit"
-                className="w-100 mt-3 btn btn-primary rounded-5"
-              >
-                Sign In
-              </button>
+            <div className="row">
+              <div className="col-6 col-lg-12">
+                <button
+                  type="submit"
+                  className="w-100 mt-3 btn btn-primary rounded-5"
+                >
+                  Sign In
+                </button>
+              </div>
+              <div className="d-lg-none text-decoration-underline col-6 col-lg-12 d-flex align-items-center justify-content-end">
+                or, Create Account
+              </div>
             </div>
           </form>
 
@@ -52,7 +57,7 @@ const Login = ({ handelChangeForm }) => {
             <small>Forgot Password?</small>
           </div>
         </div>
-        <div className="w-50 signup">
+        <div className="col-12 col-lg-6 d-none d-lg-block signup">
           <p className="text-end">
             Don’t have an account yet?
             <button
