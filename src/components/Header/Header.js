@@ -10,18 +10,20 @@ const Header = () => {
   return (
     <nav class="navbar bg-white navbar-expand-lg">
       <div class="container">
-        <div className="w-100 d-flex justify-content-between">
-          <Link to="/" className="d-none d-lg-block">
-            <img src={logo} alt="" />
-          </Link>
-          <div className="search position-relative d-none d-lg-block">
+        <div className="row w-100">
+          <div className="col-4">
+            <Link to="/" className="d-none d-lg-block">
+              <img src={logo} alt="" />
+            </Link>
+          </div>
+          <div className="col-4 search position-relative d-none d-lg-block">
             <IoMdSearch className="search-icon" />
             <input
               type="text"
               placeholder="Search for your favorite groups in ATG"
             />
           </div>
-          <div className="user">
+          <div className="col-12 col-lg-4 user d-flex justify-content-end">
             {/* Here is conditional, if there is a user, the information of the user will be displayed, if not, the signup will be displayed */}
             {/* Since there is no user now, I saw Signup */}
             <Signup />
