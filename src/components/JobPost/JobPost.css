@@ -1,0 +1,10 @@
+.job-apply-btn {
+  width: 100%;
+  border: 1px solid #a9aeb8;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #02b875;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 0px;
+}

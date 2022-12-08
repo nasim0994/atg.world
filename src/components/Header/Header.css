@@ -1,0 +1,26 @@
+.search input {
+  width: 360px;
+  border: none;
+  background: #f2f2f2;
+  border-radius: 17px;
+  padding: 7px 45px;
+  color: #5c5c5c;
+}
+
+.search .search-icon {
+  font-size: 22px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  color: #7a7a7a;
+  z-index: 1;
+}
+
+.user a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #2e2e2e;
+}
+.user span {
+  color: #2f6ce5;
+}

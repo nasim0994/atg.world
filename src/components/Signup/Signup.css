@@ -1,0 +1,40 @@
+button.close-btn {
+  position: absolute;
+  right: -23px;
+  top: -30px;
+  background: #e4e4e4;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-header {
+  background-color: #effff4;
+  color: #008a45;
+  font-weight: 500;
+}
+
+.input-group input {
+  background: #f7f8fa;
+  border: 1px solid #ddd;
+  padding: 7px;
+  outline: none;
+}
+
+.socialSignup button {
+  width: 100%;
+  border: 1px solid #d9d9db;
+  padding: 5px 0px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.signup .signup-banner {
+  width: 100%;
+  height: 277px;
+}
